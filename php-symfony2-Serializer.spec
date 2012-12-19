@@ -10,7 +10,7 @@ License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
 # Source0-md5:	f826ccfcb1bbe87111bf31a3d0b8809d
-URL:		http://pear.symfony.com/package/Serializer/
+URL:		http://symfony.com/doc/current/components/serializer.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
