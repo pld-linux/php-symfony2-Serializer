@@ -1,15 +1,14 @@
-%define		status		stable
 %define		pearname	Serializer
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 Serializer Component
+Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	8721d56754cf2c5ae49a2c199d0ede02
+# Source0-md5:	22caaf2fafd4a30193771aa775b64401
 URL:		http://symfony.com/doc/current/components/serializer.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
@@ -22,20 +21,17 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 Serializer Component
-
-In PEAR status of this package is: %{status}.
+The Serializer Component is meant to be used to turn objects into a
+specific format (XML, JSON, Yaml, ...) and the other way around.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install
