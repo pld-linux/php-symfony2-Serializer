@@ -3,18 +3,25 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
-Version:	2.3.4
+Version:	2.4.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	22caaf2fafd4a30193771aa775b64401
-URL:		http://symfony.com/doc/current/components/serializer.html
+# Source0-md5:	40bf5ded81e6306cf317c5e651102bc8
+URL:		http://symfony.com/doc/2.4/components/serializer.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(ctype)
+Requires:	php(dom)
+Requires:	php(json)
+Requires:	php(pcre)
+Requires:	php(simplexml)
+Requires:	php(spl)
+Requires:	php(xml)
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 BuildArch:	noarch
