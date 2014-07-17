@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
-Version:	2.4.3
+Version:	2.4.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	40bf5ded81e6306cf317c5e651102bc8
+# Source0-md5:	9b4d7dd7f5d9f37799ab578d348f0c79
 URL:		http://symfony.com/doc/2.4/components/serializer.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
