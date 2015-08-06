@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGELOG.md LICENSE README.md
 %dir %{php_pear_dir}/Symfony/Component/Serializer
 %{php_pear_dir}/Symfony/Component/Serializer/*.php
+%{php_pear_dir}/Symfony/Component/Serializer/Annotation
 %{php_pear_dir}/Symfony/Component/Serializer/Encoder
 %{php_pear_dir}/Symfony/Component/Serializer/Exception
+%{php_pear_dir}/Symfony/Component/Serializer/Mapping
+%{php_pear_dir}/Symfony/Component/Serializer/NameConverter
 %{php_pear_dir}/Symfony/Component/Serializer/Normalizer
