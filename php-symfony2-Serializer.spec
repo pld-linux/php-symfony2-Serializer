@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	0c642191b00d1857d2ca3e51db44bab5
+# Source0-md5:	2bb48619e247ae49647629c530d0274b
 URL:		http://symfony.com/doc/2.7/components/serializer.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -30,7 +30,7 @@ The Serializer Component is meant to be used to turn objects into a
 specific format (XML, JSON, Yaml, ...) and the other way around.
 
 %prep
-%setup -q -n %{package}-%{version}
+%setup -q -n serializer-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
