@@ -37,9 +37,9 @@ phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
-cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
-rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}/Tests
+install -d $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{package}
+cp -a *.php */ $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{package}
+rm -r $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{package}/Tests
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -47,11 +47,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGELOG.md LICENSE README.md
-%dir %{php_pear_dir}/Symfony/Component/Serializer
-%{php_pear_dir}/Symfony/Component/Serializer/*.php
-%{php_pear_dir}/Symfony/Component/Serializer/Annotation
-%{php_pear_dir}/Symfony/Component/Serializer/Encoder
-%{php_pear_dir}/Symfony/Component/Serializer/Exception
-%{php_pear_dir}/Symfony/Component/Serializer/Mapping
-%{php_pear_dir}/Symfony/Component/Serializer/NameConverter
-%{php_pear_dir}/Symfony/Component/Serializer/Normalizer
+%dir %{php_data_dir}/Symfony/Component/Serializer
+%{php_data_dir}/Symfony/Component/Serializer/*.php
+%{php_data_dir}/Symfony/Component/Serializer/Annotation
+%{php_data_dir}/Symfony/Component/Serializer/Encoder
+%{php_data_dir}/Symfony/Component/Serializer/Exception
+%{php_data_dir}/Symfony/Component/Serializer/Mapping
+%{php_data_dir}/Symfony/Component/Serializer/NameConverter
+%{php_data_dir}/Symfony/Component/Serializer/Normalizer
