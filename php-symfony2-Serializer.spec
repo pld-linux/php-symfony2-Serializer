@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
-Version:	2.7.5
+Version:	2.7.7
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	2bb48619e247ae49647629c530d0274b
+# Source0-md5:	f3dc32345a3d12cf8ae8734ccaaf7b00
 URL:		http://symfony.com/doc/2.7/components/serializer.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -33,7 +33,7 @@ specific format (XML, JSON, Yaml, ...) and the other way around.
 %setup -q -n serializer-%{version}
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
