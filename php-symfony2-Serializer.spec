@@ -20,6 +20,7 @@ Requires:	php(pcre)
 Requires:	php(simplexml)
 Requires:	php(spl)
 Requires:	php(xml)
+Requires:	php-dirs >= 1.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
