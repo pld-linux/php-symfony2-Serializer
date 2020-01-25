@@ -1,6 +1,5 @@
 %define		package	Serializer
 %define		php_min_version 5.3.9
-%include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
 Version:	2.7.8
