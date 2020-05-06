@@ -2,12 +2,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Serializer Component
 Name:		php-symfony2-Serializer
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	7dde36d910d484b5a592f302a492c40b
+# Source0-md5:	92fed432082e45c9e43e9041b3508ac7
 URL:		http://symfony.com/doc/2.7/components/serializer.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
